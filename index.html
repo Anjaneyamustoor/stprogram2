@@ -1,0 +1,49 @@
+<html>
+<head>
+<script type="text/javascript">
+function sqrt()
+{
+var a=document.getElementById("t1").value;
+var res=Math.sqrt(a);
+document.getElementById("t2").value=res;
+}
+function floor()
+{
+var a=document.getElementById("t1").value;
+var res=Math.floor(a);
+document.getElementById("t2").value=res;
+}
+function ceil()
+{
+var a=document.getElementById("t1").value;
+var res=Math.ceil(a);
+document.getElementById("t2").value=res;
+}
+function log()
+{
+var a=document.getElementById("t1").value;
+var res=Math.log(a);
+document.getElementById("t2").value=res;
+}
+</script>
+</head>
+<center>
+<body>
+<form>
+<h2>Basic mathematical functions</h2>
+INPUT:<input type ="text" id = "t1" /><br><br>
+(To find the square root of given number)<br>
+<input type="button" id="sqr" value="sqrt" onclick="sqrt();"/><br><br>
+(To find the floor value of given number)<br>
+
+<input type="button" id="flr" value="floor" onclick="floor();"/><br><br>
+(To find the ceiling value of given number)<br>
+<input type="button" id="cl" value="ceil" onclick="ceil();"/><br><br>
+(To find the log base e of given number)<br>
+<input type="button" id="lg" value="log" onclick="log();"/><br><br>
+RESULT:<input type ="text" id ="t2" value=""/><br><br>
+<input type="reset" value="reset"/>
+</form>
+</body>
+</center>
+</html>
